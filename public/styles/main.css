@@ -1,0 +1,72 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+    /* tamanho da fonte padrão: 16px - 100% - 1rem */
+    font-size: 60%;
+}
+    
+    #container {
+        /* border: 1px solid var(--color-primary);  | bordas da forma (largura) */
+
+        /* preenchimento
+        padding: 50px 50px 50px 3px; 
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        padding-bottom: 10px;
+        margin: 40px 10px;
+        */
+        
+        /* largura */
+        width: 90vw; /* se adapta ao tamanho => 90% do campo de visão */
+        max-width: 700px; /* ao aumentar a tela, vai até o tamanho máx de 700px*/
+    }
+    
+    html, body {
+        height: 100vh; /* tamanho máximo (altura) */
+    }
+
+    body {       
+        background: var(--color-background);
+        display: flex; /* display vertical - horizontal dos elementos*/
+        align-items: center; /* alinha de acordo com o tamanho da página (altura)*/
+        justify-content: center; /* alinha o conteúdo (largura) */ 
+    }
+    
+    body, 
+    input,
+    button,
+    textarea {
+        font: 500 1.6rem Poppins;
+        /*
+        font-weight: 500 => é a força da fonte, como um negrito
+        font-family: Poppins => tipo de fonte 
+        font-size: 1.6rem => tamanho da fonte;*/
+        color: var(--color-text-complement);
+
+    } 
+
+    @media (min-width: 700px) {
+        :root {
+            font-size: 62.5% ;
+        }    
+    }
+    

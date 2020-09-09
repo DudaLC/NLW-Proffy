@@ -1,0 +1,104 @@
+<!-- isso e uma tag <html> -->
+<!-- na tag <head> irão as configurações do documento -->
+<!-- na tag <body> todo conteúdo visivel da pagina -->
+<!--
+    HTML
+
+    HiperText
+        Hiper texto
+
+    Markup
+        Marcação
+
+    Language
+        Linguagem
+
+        <h1> Proffy </h1> - Tag para titulos 
+        <p class="blue"> Sua plataforma de estudos Online </p> -  Tag de parágrafo
+    -->
+
+
+<!DOCTYPE html>
+<html lang="pt_br"> <!-- lang é um atributo da tag -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8257E5">
+    <title>Proffy | Sua Plataforma de Estudos Online</title> <!-- Titulo do site -->
+
+    <style> 
+        /* essa area é do CSS - ela pode ficar aqui ou em outro arquivo
+        Cascading
+            em cascata
+
+        StyleSheet
+            folha de estilo
+        */
+        /*
+        h1 {
+            color: blueviolet;
+            }  define alterações a todos os h1 (pode ser qualquer tag)
+
+        .blue  {
+            color: cadetblue;
+        } /* define alterações a todas as tags com essa classe
+             classes são definidas por: .+nomeDaClasse
+
+        #page-landing {
+            color: crimson;
+        }  define alterações a todos os dados dentro da tag com esse id
+             para marcar o ID: #+nomeID
+
+        #page-landing h1 {
+            color: darkblue;
+        }  aceita combinações, como ID + tag
+             quanto mais específico maior a força 
+        */
+
+    </style> <!-- Essa tag no <head> permite alterações de estilo para os elementos         escolhidos 
+       a ordem de força dos elementos é: ID > class > tag -->
+
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+  
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/partials/page-landing.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+
+</head>
+
+    
+<body id="page-landing">
+
+    <div id="container">
+
+        <div class="logo-container"> 
+            <img src="/images/logo.svg" alt="Proffy">  
+            <h2> Sua plataforma de estudos online </h2>  
+        </div>  
+
+        <img class="hero-image" src="/images/landing.svg" alt="Plataforma de estudos"> <!-- tag <img> para imagens 
+        src = source - fonte da imagem 
+        alt = aternativa - caso a imagem esteja indisponível (feita em texto)-->
+
+        <div class="buttons-container"> 
+            <a class="study" href="/study"> 
+                <img src="/images/icons/study.svg" alt="Estudar">
+                Estudar
+            </a>
+            <a class="give-classes" href="/give-classes"> 
+                <img src="/images/icons/give-classes.svg" alt="Dar aulas">
+                Dar aulas
+            </a>
+        </div>
+
+        <p class="total-connections"> 
+            Total de 200 conexões já realizadas
+            <img src="/images/icons/purple-heart.svg" alt="coração roxo">
+        </p>
+    </div>
+     
+</body>
+</html>
